@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shadrack Kipkoech — Portfolio</title>
+  <link rel="stylesheet" href="./assets/style.css" />
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="profile">
+      <img src="./images/profile.jpeg" alt="Shadrack profile photo" class="avatar" />
+      <h1 class="name">Shadrack Kipkoech</h1>
+      <p class="tag">Frontend Engineer • Backend Developer • Problem Solver</p>
+    </div>
+
+    <nav class="nav">
+      <ul>
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#resume" class="nav-link">Resume</a></li>
+        <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+        <li><a href="#blog" class="nav-link">Blog</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="contact-quick">
+      <a href="mailto:shadrackkoeh@gmail.com">shadrackkoeh@gmail.com</a>
+      <span>+254 708 663 597</span>
+      <span>Nairobi, Kenya</span>
+    </div>
+  </aside>
+
+  <!-- Main content -->
+  <main class="main">
+    <!-- Home -->
+    <section id="home" class="section active">
+      <div class="hero card">
+        <div class="hero-left">
+          <h2>Hello, I’m <span class="accent">Shadrack</span></h2>
+          <p class="lead">
+            I build modern, scalable frontend experiences and robust backend services using JavaScript.
+            I combine hands-on learning from FreeCodeCamp and practical tutorials from YouTube with
+            ALX backend training to deliver end-to-end solutions.
+          </p>
+          <div class="hero-cta">
+            <a class="btn" href="#portfolio">View Portfolio</a>
+            <a class="btn ghost" href="#contact">Contact Me</a>
+          </div>
+        </div>
+        <div class="hero-right">
+          <div class="profile-card">
+            <img src="./images/profile.jpeg" alt="profile" />
+            <h3>Shadrack Kipkoech</h3>
+            <p>JavaScript • Node.js • React • APIs • Performance</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume -->
+    <section id="resume" class="section">
+      <h2 class="section-title">Resume</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Experience</h3>
+          <div class="timeline">
+            <div class="item">
+              <span class="date">2025 — Present</span>
+              <div class="body">
+                <h4>Backend Developer (ALX )</h4>
+                <p>Currently advancing as a Backend Engineer through African Leadership Xcelerator (ALX), I focus on building scalable, secure, and efficient server-side applications. My primary tools are JavaScript, Node.js, and Express, which I use to design APIs, manage databases, and handle user authentication. </p>
+              </div>
+            </div>
+            <div class="item">
+              <span class="date">2023-2024</span>
+              <div class="body">
+                <h4>Frontend Engineer (Self-taught)</h4>
+                <p>As a self-taught Frontend Engineer, I built my foundation in HTML, CSS, and JavaScript through FreeCodeCamp while using YouTube as a powerful learning resource. I actively followed top developers and coding channels, applying their tutorials to real projects and modern website recreations. This approach not only sharpened my skills in creating responsive layouts and interactive user interfaces but also taught me industry best practices and problem-solving strategies. By blending structured coursework with practical, hands-on learning, I developed the ability to quickly adapt to new frameworks, tools, and trends—transforming online knowledge into functional, professional code.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Education & Training</h3>
+          <ul class="list">
+            <li><strong>Kisii University</strong> — BSc Information Technology (Ongoing)</li>
+            <li><strong>ALX</strong> — Backend Development Program</li>
+            <li><strong>FreeCodeCamp</strong> — Frontend Projects & Certifications</li>
+          </ul>
+
+          <h3 style="margin-top:18px">Highlights</h3>
+          <ul class="list">
+            <li>API design, Database modelling, Authentication</li>
+            <li>Responsive UI, Accessibility, Performance optimizations</li>
+            <li>Git workflow, Deployment (GitHub Pages / Netlify)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="section">
+      <h2 class="section-title">Portfolio</h2>
+
+      <div class="filters">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="webdev">Web Development</button>
+      </div>
+
+      <div class="portfolio-grid">
+        <!-- Keep only Sizzle house Restaurant -->
+        <article class="card portfolio-item webdev">
+          <h3>Sizzle House Restaurant</h3>
+          <p>Restaurant site with menu filter, reservations, gallery, dark mode and cart. Built with HTML, CSS, JS.</p>
+          <div class="card-actions">
+            <a href="sizzle-restaurant.html" class="btn small" target="_blank">View</a>
+            <a href="#" class="btn small ghost">Source</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Blog -->
+    <section id="blog" class="section">
+      <h2 class="section-title">Blog — JavaScript Trends</h2>
+
+      <div class="blog-grid">
+        <!-- 4 blog cards -->
+        <article class="card blog-item">
+          <h3>1. The Rise of Edge Functions</h3>
+          <p class="muted">How serverless edge functions are changing deployment and performance strategies for modern apps.</p>
+          <button class="btn read-more" data-title="The Rise of Edge Functions" data-body="Edge functions bring compute closer to users by running at the CDN edge. This trend reduces latency and enables faster personalization and A/B testing...">Read more</button>
+        </article>
+
+        <article class="card blog-item">
+          <h3>2. React Server Components & Streaming</h3>
+          <p class="muted">RSCs reduce client JS bundle size and improve perceived performance — what it means for frontends.</p>
+          <button class="btn read-more" data-title="React Server Components & Streaming" data-body="React Server Components let you move heavy rendering to the server, giving smaller client bundles and faster initial loads. Combined with streaming, pages can render incrementally...">Read more</button>
+        </article>
+
+        <article class="card blog-item">
+          <h3>3. TypeScript Everywhere</h3>
+          <p class="muted">Type safety adoption across stacks: why TS is now the standard for many teams.</p>
+          <button class="btn read-more" data-title="TypeScript Everywhere" data-body="TypeScript improves developer confidence, prevents common runtime errors, and pairs well with modern editors. From Node.js backends to React frontends, teams increasingly rely on types...">Read more</button>
+        </article>
+
+        <article class="card blog-item">
+          <h3>4. AI-assisted Development</h3>
+          <p class="muted">How AI tools speed up coding, testing and documentation — and how to use them responsibly.</p>
+          <button class="btn read-more" data-title="AI-assisted Development" data-body="AI coding assistants accelerate boilerplate generation and debugging. The important part is using AI to augment thinking, not replace careful design and testing...">Read more</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <h2 class="section-title">Skills — Visual Overview</h2>
+
+      <div class="skill-grid">
+        <div class="card skill-card">
+          <h3>Skill Summary</h3>
+          <canvas id="skillsChart" width="420" height="420" aria-label="Skills chart"></canvas>
+        </div>
+
+        <div class="card skill-legend">
+          <h3>Legend & Scores</h3>
+          <ul class="skill-list">
+            <li><strong>Frontend</strong> — 85% (HTML, CSS, React)</li>
+            <li><strong>Backend</strong> — 78% (Node.js, Express, APIs)</li>
+            <li><strong>Databases</strong> — 70% (MongoDB, PostgreSQL)</li>
+            <li><strong>Dev Tools</strong> — 75% (Git, CLI, Deployment)</li>
+            <li><strong>Communication</strong> — 88% (Teamwork, Docs, Client comms)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <h2 class="section-title">Contact</h2>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Get in touch</h3>
+          <p>Want to collaborate or see code? Send a message and I’ll reply.</p>
+          <form id="contact-form">
+            <input name="name" type="text" placeholder="Your name" required />
+            <input name="email" type="email" placeholder="Email" required />
+            <textarea name="message" placeholder="Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+
+        <div class="card">
+          <h3>Quick Contacts</h3>
+          <p><strong>Email:</strong> <a href="mailto:shadrackkoeh@gmail.com">shadrackkoeh@gmail.com</a></p>
+          <p><strong>Phone:</strong> +254 708 663 597</p>
+          <p><strong>Location:</strong> Nairobi, Kenya</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Blog Modal -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-wrap">
+      <button class="modal-close" aria-label="Close">✕</button>
+      <h3 id="modal-title"></h3>
+      <div id="modal-body" class="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="./assets/script.js"></script>
+</body>
+</html>
